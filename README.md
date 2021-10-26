@@ -1,4 +1,4 @@
-# Infants/young children with Cov19
+# Infants/young children with COVID-19
 Padiatric COVID-19 project
 
 # Study design for scRNAseq: 
