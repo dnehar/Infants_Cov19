@@ -7,7 +7,7 @@ Cohort:
 
 
 # Study design for scRNAseq
-scRNA-seq profiling of PBMC from 26 SARS-Cov-2 infected infants (10 asymptomatic, 11 mild and 5 severe patients), as well as 14 healthy matched controls
+scRNA-seq profiling of PBMC from 26 SARS-Cov-2 infected infants/young children (10 asymptomatic, 11 mild and 5 severe patients), as well as 14 healthy matched controls
 Antibody titers (anti-SARS and IFN)
 
 # scRNAseq method  
