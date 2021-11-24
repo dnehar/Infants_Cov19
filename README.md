@@ -1,7 +1,7 @@
 # Infants/young children with COVID-19
 Padiatric COVID-19 project
 
-Cohort details: 
+# Cohort details 
 26 SARS-Cov-2 infected infants (10 asymptomatic, 11 mild and 5 severe patients)
 14 healthy matched controls
 
