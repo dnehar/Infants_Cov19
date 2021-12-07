@@ -1,9 +1,10 @@
 # Infants/young children with COVID-19
-Padiatric COVID-19 project
+Pediatric COVID-19 project
 
 # Cohort details 
 26 SARS-Cov-2 infected infants (10 asymptomatic, 11 mild and 5 severe patients)
 14 healthy matched controls
+Age = less than 12 months
 
 
 # Study design for scRNAseq
