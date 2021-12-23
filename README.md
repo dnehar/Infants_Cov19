@@ -17,4 +17,4 @@ Antibody titers (anti-SARS and IFN)
 
 # Other measurments 
 1- Serum analyte quantitation using Olink (92 Analytes) and ELISA kits (Biolegend) focused on inflammatory and interferon pathways
-2- Antibody titers (anti-SARS-CoV-2 and anti-IFN)
+2- Antibody titers (anti-SARS-CoV-2: Spike, S2 and RBD and anti-IFN)
