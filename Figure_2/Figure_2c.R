@@ -12,9 +12,7 @@ dim(Meta)
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
-# 
 subset_to_be_plotted <- c( 'CD14_mono_SC0','CD14_mono_SC1','CD14_mono_SC2', 'CD14_mono_SC3')
-#subset_to_be_plotted <- c('CD8_TEMRA','CD8_cycling') #CD14_mo_ISGhi
 
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(annotated_SCs)) %>%
