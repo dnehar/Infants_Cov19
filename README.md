@@ -27,7 +27,9 @@ Fastq files will be available on dbGAP (phs002655.v1.p1) upon acceptance.
 10X Genomics V3 chemistry
 
 ## Other measurments 
-1- Serum analyte quantitation using Olink (92 Analytes)
-2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD 
-3- Anti-Inteferon auto-antibodies
+1- Serum analyte quantitation using Olink (92 Analytes) 
+
+2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD  
+
+3- Anti-Inteferon auto-antibodies 
 
