@@ -80,7 +80,7 @@ library(tidyr)
    }
    
    # load sample information   
-   meta <- read.table('pCov40_SampleInfo_04142021.txt', header = T, row.names = 1) 
+   meta <- read.table('pCov40_SampleInfo_03112025.txt', header = T, row.names = 1) 
    head(meta)
    meta <- meta[,-c(1,2,3)]
    
