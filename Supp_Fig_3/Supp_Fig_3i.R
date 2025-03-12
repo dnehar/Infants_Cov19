@@ -11,11 +11,8 @@ Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
-
-
-# 
+ 
 subset_to_be_plotted <- c( 'Mgk','HSCs')
-#subset_to_be_plotted <- c('CD8_TEMRA','CD8_cycling') #CD14_mo_ISGhi
 
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(annotated_SCs)) %>%
