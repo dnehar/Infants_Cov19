@@ -1,12 +1,11 @@
 
 ## Pediatric COVID-19 (pCoV) project: 
-Two month infants with COVID-19 
+Two month infants with COVID-19 with different disease severity.  
 
 ## Goal of the study: 
 1. Explore the immune alterations upon SARS-CoV-2 infection in two months old infants
 2. Compare immune alterations in infants with those observed in adults with COVID-19 (Liu et al.; PMID: 33713619; GSE161918)
 3. Compare immune alterations in infants with those observed in children with COVID (Wimmers et al PMID: 37776858; GSE239799)
-
 
 ## Cohort information:
 -> 26 SARS-Cov-2 infected infants: 10 subacute (G1), 11 moderate (G2) and 5 severe (G3) patients 
