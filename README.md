@@ -10,7 +10,9 @@ Two month infants with COVID-19
 
 ## Cohort information:
 -> 26 SARS-Cov-2 infected infants: 10 subacute (G1), 11 moderate (G2) and 5 severe (G3) patients 
+
 -> 14 healthy matched controls
+
 -> Age: pediatric COVID-19 (pCoV) : median, IQR age: 1.63 [0.93-7.59] months | Healthy controls:   median IQR age: 2.01 [1.86-4.28] months
 
 
@@ -26,9 +28,11 @@ Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the n
 Fastq files will be available on dbGAP under: **phs002655.v1.p1**
 
 ## scRNAseq chemistry  
+
 10X Genomics V3 chemistry
 
 ## Other measurments 
+
 1- Serum analyte quantitation using Olink (92 Analytes) 
 
 2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD  
