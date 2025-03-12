@@ -3,6 +3,7 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
