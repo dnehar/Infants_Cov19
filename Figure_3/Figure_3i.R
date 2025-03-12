@@ -3,6 +3,7 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 Meta <- read.csv('./meta_subclusters/pCoV_CD4_Tregs_bbknn_02042025.csv')
 head(Meta)
