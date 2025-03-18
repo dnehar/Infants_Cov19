@@ -46,4 +46,4 @@ BP <- Meta %>%
   
   ylab('% in CD14 mo') + xlab('Individuals (n=40)')
 
-BP 
+print(BP)
