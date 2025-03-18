@@ -13,8 +13,8 @@ dim(Meta)
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
+# DC subset to ne plotted 
 subset_to_be_plotted <- c( 'cDC_SC0','cDC_SC1','cDC_SC2','cDC_SC3','cDC_SC4','cDC_SC5','cDC_SC6')
-
 
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(annotated_SCs)) %>%
@@ -44,4 +44,4 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in DCs') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
