@@ -22,7 +22,7 @@ library(Seurat)
 library(SeuratDisk)
 
 
-# Convert AnnData object to seurat object 
+# Convert AnnData object to seurat object using Seurat-disk package
 
 #https://github.com/mojaveazure/seurat-disk/issues/109
 
