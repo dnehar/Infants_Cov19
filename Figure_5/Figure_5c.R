@@ -3,6 +3,7 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+#colors
 col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
@@ -13,6 +14,7 @@ dim(Meta)
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
+# subsets to plot 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
 
