@@ -4,13 +4,16 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+# colors 
+cols <- c('B_cells_SC0'='tomato','B_cells_SC1'='paleturquoise','B_cells_SC3'='mediumseagreen','B_cells_SC2'='cornflowerblue','B_cells_SC4'='mediumpurple')
+
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 head(Meta)
 dim(Meta) 
 
-cols <- c('B_cells_SC0'='tomato','B_cells_SC1'='paleturquoise','B_cells_SC3'='mediumseagreen','B_cells_SC2'='cornflowerblue','B_cells_SC4'='mediumpurple')
 
+# subset to be plotted 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
 pHC <-  paste0("pHC", seq(1:14))
