@@ -6,8 +6,8 @@ SARS-CoV-2 infected two-month-old infants with different disease severity.<br/>
 
 ## Goal of the study: 
 1. Explore the immune alterations upon SARS-CoV-2 infection in two months old infants. <br/>
-2. Compare immune alterations in infants with those observed in **young children** with COVID-19 (Wimmers et al PMID: 37776858; [GSE239799]).<br/>
-3. Compare immune alterations in infants with those observed in **adults** with COVID-19 (Liu et al.; PMID: 33713619; [GSE161918]). <br/>
+2. Compare immune alterations in infants with those observed in **children** with COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
+3. Compare immune alterations in infants with those observed in **adults** with COVID-19 (Liu et al.; [PMID:33713619]; scRNAseq dataset [GSE161918]). <br/>
 
 ## Cohort information (scRNAseq):
 -> 26 SARS-Cov-2 infected infants: 10 subacute (Group1, G1), 11 moderate (G2) and 5 severe (G3) patients.<br/>
@@ -33,3 +33,5 @@ Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
 [GSE161918]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161918
 [preprint #1]: https://www.researchsquare.com/article/rs-5176621/v1 
 [preprint #2]: https://www.researchsquare.com/article/rs-5640872/v1 
+[PMID:37776858]: https://pubmed.ncbi.nlm.nih.gov/37776858/
+[PMID:33713619]: https://pubmed.ncbi.nlm.nih.gov/33713619/
