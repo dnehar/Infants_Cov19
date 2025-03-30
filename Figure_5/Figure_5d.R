@@ -1,4 +1,3 @@
-
 library(dplyr)
 library(cowplot)
 library(ggpubr)
@@ -16,12 +15,14 @@ dim(Meta)
 # subset to be plotted 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
+#order donors 
 pHC <-  paste0("pHC", seq(1:14))
 pG1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
 pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
 pG3 <- c( "pCoV2","pCoV7", "pCoV11", "pCoV17","pCov21")
 ordered_names <- c(pHC, pG1, pG2, pG3)
 
+#plot 
 BP <- Meta %>% 
   
   mutate(Patient_groups = factor(Groups, levels = c("pHC", "G1", "G2", "G3"))) %>%
