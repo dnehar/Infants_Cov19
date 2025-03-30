@@ -16,8 +16,8 @@ SARS-CoV-2 infected two-month-old infants with different disease severity.<br/>
 
 
 ## Publications associated with the study:
-Paper 1 (accepted in Nature Communication): https://www.researchsquare.com/article/rs-5176621/v1 (preprint). <br/>
-Paper 2 (in revision): https://www.researchsquare.com/article/rs-5640872/v1 (preprint). <br/>
+Paper 1 (accepted in Nature Communication): [preprint #1]. <br/>
+Paper 2 (in revision): [preprint #2]. <br/>
 
 ## Data availability: 
 Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the notebooks) are publicly available: **[GSE206289]** <br/>
@@ -31,4 +31,5 @@ Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
 [GSE161918]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161918
-
+[preprint #1]: https://www.researchsquare.com/article/rs-5176621/v1 
+[preprint #2]: https://www.researchsquare.com/article/rs-5640872/v1 
