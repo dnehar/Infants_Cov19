@@ -3,6 +3,7 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+# colors
 col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
@@ -13,11 +14,10 @@ dim(Meta)
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
-
-
+# subsets to plot
 subset_to_be_plotted <- c( 'CD4_SC0','CD4_SC1','CD4_SC2','CD4_SC3')
 
-
+# plot
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(annotated_SCs)) %>%
   mutate(Groups = factor(Patient_groups, levels = clinical_groups)) %>%
@@ -46,5 +46,5 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in CD4 T cells') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
 
