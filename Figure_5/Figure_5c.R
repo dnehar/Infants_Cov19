@@ -17,7 +17,7 @@ my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 # subsets to plot 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
-
+# plot
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(SCs, levels =subset_to_be_plotted)) %>%
   mutate(Groups = factor(Patient_groups, levels = clinical_groups)) %>%
