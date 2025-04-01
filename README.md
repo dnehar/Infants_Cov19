@@ -24,8 +24,8 @@ Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the n
 Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
 
 ## Other assays 
-1- Serum analyte quantitation using Olink (92 Analytes) <br/>
-2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD - Data is available as Supplementary Data 7 <br/> 
+1- Serum analyte quantitation using Olink (92 Analytes) - Raw data (olink) is available as Supplementary Data 7 <br/>
+2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD  <br/> 
 3- Anti-Inteferon auto-antibodies <br/>
 
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
