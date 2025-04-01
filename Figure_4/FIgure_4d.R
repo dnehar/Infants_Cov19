@@ -47,4 +47,4 @@ BP <- Meta %>%
   
   ylab('% in CD8 T cells') + xlab('Individuals (n=40)')
 
-BP 
+print(BP )
