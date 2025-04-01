@@ -10,10 +10,11 @@ Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 head(Meta)
 dim(Meta) 
 
+#order clinical groups
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
-
+# subset to plot 
 subset_to_be_plotted <- c( 'CD8_NAIVE','CD8_ISGhi','CD8_GzK','CD8_TEMRA','CD8_Prolif')
 
 
@@ -45,4 +46,4 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in CD8 T cells') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
