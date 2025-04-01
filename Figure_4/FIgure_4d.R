@@ -1,4 +1,3 @@
-
 library(dplyr)
 library(cowplot)
 library(ggpubr)
@@ -10,10 +9,13 @@ Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 head(Meta)
 dim(Meta) 
 
+#colors
 cols <- c('CD8_NAIVE'='tomato','CD8_ISGhi'='paleturquoise','CD8_GzK'='mediumseagreen','CD8_TEMRA'='cornflowerblue','CD8_Prolif'='mediumpurple')
 
+#subsets to plots
 subset_to_be_plotted <- c( 'CD8_NAIVE','CD8_ISGhi','CD8_GzK','CD8_TEMRA','CD8_Prolif')
 
+#order samples
 pHC <-  paste0("pHC", seq(1:14))
 pG1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
 pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
