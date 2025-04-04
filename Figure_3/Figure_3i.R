@@ -3,8 +3,10 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
+# colors
 col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
+# meta data
 Meta <- read.csv('./meta_subclusters/pCoV_CD4_Tregs_bbknn_02042025.csv')
 head(Meta)
 dim(Meta)
@@ -37,6 +39,6 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in Tregs') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
 
 
