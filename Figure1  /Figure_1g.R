@@ -4,34 +4,24 @@ library(ggpubr)
 library(tidyr)
 
 
+# load meta data (PBMCs, n=203,402 cells)   
+Meta <- read.csv('Meta_pCoV40_03112025_small.csv') 
 
-  # load meta data (PBMCs, n=203,402 cells)   
-  Meta <- read.csv('Meta_pCoV40_03112025_small.csv') 
-  head(Meta)
-  dim(Meta) 
-  
-  #------- SC_Meta
-  nbr_indiv <- length(unique(SC_Meta$Fig_ids))
+nbr_indiv <- length(unique(SC_Meta$Fig_ids))
   
   #---- Order samples depending on the patient groups 
+pHC <- unique(filter(SC_Meta, Patient_groups=='pHC') %>% select(Fig_ids))$Fig_ids
+G1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
+G2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
+G3 <- c( "pCoV2","pCoV7", "pCoV11", "pCoV17","pCov21")
+ordered_names <- c(pHC, G1, G2, G3)
   
-  pHC <- unique(filter(SC_Meta, Patient_groups=='pHC') %>% select(Fig_ids))$Fig_ids
-  G1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
-  G2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
-  G3 <- c( "pCoV2","pCoV7", "pCoV11", "pCoV17","pCov21")
-  
-  
-  ordered_names <- c(pHC, G1, G2, G3)
-  
-  #- color vector
+#- colors
   a <- c(rep("#66bd63",length(pHC)),#14
          rep("#d8daeb",length(G1)), #10
          rep("#9e9ac8",length(G2)),#11
          rep("#54278f",length(G3)))# 5
-  
-  
-  
-  col_simple_clustering = c('CD8_Tcells' = '#fc8d59',
+ col_simple_clustering = c('CD8_Tcells' = '#fc8d59',
                             'CD4_Tcells' = '#9e9ac8',
                             'B_cells'='#96daf7',
                             'NK' = '#fed976',
@@ -45,7 +35,7 @@ library(tidyr)
                             'CD16_mono' = '#f9d3d7',
                             'PCs' = '#08306b')
   
-  
+  # order clusters
   ordered_clusters <- c('CD14_mono','CD16_mono','cDC','pDC','Mgk','NK','CD8_Tcells',
                         'CD4_Tcells','B_cells','PCs','HSCs','Eryth')
   
@@ -84,7 +74,7 @@ library(tidyr)
   
   #ggtitle("Individuals") +
   #ggtitle(paste(Subcluster,"SC abundance across individuals"))
-  p_Ind
+  print(p_Ind)
   
   
   getwd()
