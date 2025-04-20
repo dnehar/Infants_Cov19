@@ -42,4 +42,4 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% of cells') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
