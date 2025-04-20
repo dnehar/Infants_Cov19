@@ -4,8 +4,7 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
-
- #' A function for principal variance component analysis
+ #' A function for principal variance component analysis (PVCA)
    #'
    #' The function is written based on the 'pvcaBatchAssess' function of the PVCA R package
    #' and slightly changed to make it more efficient and flexible for sequencing read counts data.
@@ -128,9 +127,9 @@ library(tidyr)
    }
    
    plot <- PlotPVCA(results, '')
-   plot
+   print(plot)
    
-   
+   # save pdf 
    ggsave("./PVCA_analysis_pCoV_12022024.pdf", plot,
           width=7, height=3.8,  units="in", scale=1)
    
