@@ -1,4 +1,3 @@
-
 library(Seurat)
 library(reshape2)
 library(pheatmap)
@@ -6,7 +5,6 @@ library(dplyr)
 library(cowplot)
 library(ggpubr)
 library(tidyr)
-
 
 # clinical groups 
 clinical_groups <- c('pHC',"pG1", 'pG2', 'pG3',
@@ -56,10 +54,7 @@ plt_CD14_mo <- Meta %>%
 
 print(plt_CD14_mo)
 
-
-
 ######################### CD4 T cell subsets ########################
-
 
 subset_to_be_plotted <- c('CD4_SC0','CD4_SC1','CD4_SC2','CD4_SC3','CD4_SC4','CD4_SC5')
 
