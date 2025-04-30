@@ -33,7 +33,7 @@ Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
               
 
 # B cell subsets 
-subset_to_be_plotted <- paste0(c("B_cells_SC0"), ("B_cells_SC",seq(1:6))
+subset_to_be_plotted <- c("B_cells_SC0", paste0("B_cells_SC",seq(1:5)))
   
 # order names 
  pHC <-  paste0("pHC", seq(1:14))
