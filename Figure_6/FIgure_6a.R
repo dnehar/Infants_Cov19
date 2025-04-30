@@ -4,7 +4,6 @@ library(ggpubr)
 library(tidyr)
 library(pheatmap)
 
-
 #- Sample information 
 PhenoData <- read.table('pCov40_SampleInfo_03112025.txt', header = T, row.names = 2)
 PhenoData %>% select(Groups, Patient_groups, Gender) -> Pheno  # Steroids, Vasoactive_drugs,
@@ -22,7 +21,6 @@ col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 ann_colors=list(Groups=c(pCov="#9e9ac8", pHC="#66bd63"),
                 #Batches= col_Batches,
                 Patient_groups= col_pGroups)
-
 
 # plot heatmap
 p_HM <- pheatmap(t(y), 
