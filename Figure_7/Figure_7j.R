@@ -17,6 +17,9 @@ my_comp <- list(c('pG2','aG1'), c('pG2','aG2'), c('pG2','aG3'),
 
 col_patient_groups = c('aG1'= '#deebf7', 'aG2'='#9ecae1', 'aG3'='#4292c6', 
                        'aHC'='#addd8e', 'pG1'='#d8daeb', 'pG2'='#9e9ac8', 'pG3'='#54278f', 'pHC'='#66bd63')
+# Load metadata 
+
+Meta <- read.csv('')
 
 ######################### CD14 monocytes subsets #########################
 
