@@ -8,15 +8,17 @@ library(ggpubr)
 library(tidyr)
 
 
-
+# clinical groups 
 clinical_groups <- c('pHC',"pG1", 'pG2', 'pG3',
                      'aHC',"aG1", 'aG2', 'aG3')
 
 my_comp <- list(c('pG2','aG1'), c('pG2','aG2'), c('pG2','aG3'), 
                 c('pG3','aG1'), c('pG3','aG2'), c('pG3','aG3'))
 
+# colors 
 col_patient_groups = c('aG1'= '#deebf7', 'aG2'='#9ecae1', 'aG3'='#4292c6', 
                        'aHC'='#addd8e', 'pG1'='#d8daeb', 'pG2'='#9e9ac8', 'pG3'='#54278f', 'pHC'='#66bd63')
+
 # Load metadata 
 Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
 
