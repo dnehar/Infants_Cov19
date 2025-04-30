@@ -73,6 +73,6 @@ subset_to_be_plotted <- c("B_cells_SC0", paste0("B_cells_SC",seq(1:5)))
           axis.title.y = element_text(face="bold", size=18),
           legend.position = "none") + #    ylab('% PBMC') + xlab('Age groups')
     
-    ylab('% in CD8 T cells') + xlab('Individuals (n=40)')
+    ylab('% in B cells') + xlab('Individuals (n=40)')
   
   print(BP)
