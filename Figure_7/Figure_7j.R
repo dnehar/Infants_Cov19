@@ -17,7 +17,7 @@ col_patient_groups = c('aG1'= '#deebf7', 'aG2'='#9ecae1', 'aG3'='#4292c6',
 # Load metadata 
 Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
 
-######################### CD14 monocytes subsets #########################
+######################### CD14 monocyte subsets #########################
 
 subset_to_be_plotted <- c( 'CD14_SC0','CD14_SC1','CD14_SC2','CD14_SC3')
 
