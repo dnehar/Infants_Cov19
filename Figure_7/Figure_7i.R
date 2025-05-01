@@ -1,6 +1,3 @@
-library(Seurat)
-library(reshape2)
-library(pheatmap)
 library(dplyr)
 library(cowplot)
 library(ggpubr)
