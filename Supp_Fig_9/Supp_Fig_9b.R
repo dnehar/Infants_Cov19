@@ -23,7 +23,11 @@ col_SCs <- c('CD8_SC0'='tomato',
              'CD8_SC3'='mediumseagreen',
              'CD8_SC4'='mediumpurple')
 
-# B cell subsets 
+                       
+# Load metadata 
+Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
+
+######################## CD8 T cell subsets ########################
 subset_to_be_plotted <- c("CD8_SC0", paste0("CD8_SC",seq(1:3)))
 
 
