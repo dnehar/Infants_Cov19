@@ -1,15 +1,27 @@
+library(Seurat)
+library(reshape2)
+library(pheatmap)
+library(dplyr)
+library(cowplot)
+library(ggpubr)
+library(tidyr)
 
+# clinical groups 
+clinical_groups <- c('pHC',"pG1", 'pG2', 'pG3',
+                     'aHC',"aG1", 'aG2', 'aG3')
 
+my_comp <- list(c('pG2','aG1'), c('pG2','aG2'), c('pG2','aG3'), 
+                c('pG3','aG1'), c('pG3','aG2'), c('pG3','aG3'))
 
-# colors  
+# colors patient gorups
+col_patient_groups = c('aG1'= '#deebf7', 'aG2'='#9ecae1', 'aG3'='#4292c6', 
+                       'aHC'='#addd8e', 'pG1'='#d8daeb', 'pG2'='#9e9ac8', 'pG3'='#54278f', 'pHC'='#66bd63')
+
+# colors - CD16 mo subclusters 
 col_SCs <- c('CD16_mono_SC0'='paleturquoise',
              'CD16_mono_SC1'='tomato',
              'CD16_mono_SC2'='cornflowerblue',
              'CD16_mono_SC3'='mediumseagreen')
-
-
-# B cell subsets 
-subset_to_be_plotted <- c("CD16_mono_SC0", paste0("CD16_mono_SC",seq(1:3)))
 
 # order names 
 pHC <-  paste0("pHC", seq(1:14))
