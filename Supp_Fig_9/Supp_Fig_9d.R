@@ -20,8 +20,13 @@ col_patient_groups = c('aG1'= '#deebf7', 'aG2'='#9ecae1', 'aG3'='#4292c6',
 col_SCs <- c('NK_SC1'='paleturquoise',
              'NK_SC0'='tomato')
 
+# Load metadata 
+Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
 
-# NK subsets 
+
+
+######################## NK subsets ########################
+
 subset_to_be_plotted <- c("NK_SC0", "NK_SC1")
 
 
