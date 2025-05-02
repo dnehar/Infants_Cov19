@@ -5,9 +5,9 @@ SARS-CoV-2 infected two-month-old hospitalized infants with different disease se
 <img width="600" align="center" alt="Screenshot 2025-03-29 at 8 42 03 PM" src="https://github.com/user-attachments/assets/b8d80d4f-64ce-404d-80ae-9f82ab2d1710"/> <br/>
 
 ## Goal of the study: 
-1. Explore the immune alterations upon SARS-CoV-2 infection in two months old infants. <br/>
-2. Compare immune alterations in infants with those observed in **children** with COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
-3. Compare immune alterations in infants with those observed in **adults** with COVID-19 (Liu et al.; [PMID:33713619]; scRNAseq dataset [GSE161918]). <br/>
+1. Explore the immune alterations upon SARS-CoV-2 infection in two month-old hospitalized infants. <br/>
+2. Compare immune alterations in infants with those previously observed in **children** with COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
+3. Compare immune alterations in infants with those previously observed in **adults** with COVID-19 (Liu et al.; [PMID:33713619]; scRNAseq dataset [GSE161918]). <br/>
 
 ## Cohort information (scRNAseq):
 -> 26 SARS-Cov-2 infected infants: 10 subacute (Group1, G1), 11 moderate (G2) and 5 severe (G3) patients.<br/>
