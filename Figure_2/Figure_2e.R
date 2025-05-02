@@ -1,4 +1,3 @@
-
 library(dplyr)
 library(cowplot)
 library(ggpubr)
@@ -7,20 +6,21 @@ library(tidyr)
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
 
 # colors
 cols <- c('CD14_mono_SC0'='tomato','CD14_mono_SC1'='paleturquoise','CD14_mono_SC2'='cornflowerblue','CD14_mono_SC3'='mediumseagreen')
-# subsets to plot 
+
+# monocyte subclusters
 subset_to_be_plotted <- c( 'CD14_mono_SC0','CD14_mono_SC1','CD14_mono_SC2', 'CD14_mono_SC3')
 
-# order ids 
+# order individuals (n=40)
 pHC <-  paste0("pHC", seq(1:14))
 pG1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
 pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
 pG3 <- c( "pCoV2","pCoV7", "pCoV11", "pCoV17","pCov21")
 ordered_names <- c(pHC, pG1, pG2, pG3)
+
+# plot 
 BP <- Meta %>% 
   
   mutate(Patient_groups = factor(Groups, levels = c("pHC", "G1", "G2", "G3"))) %>%
