@@ -6,7 +6,7 @@ SARS-CoV-2 infected two-month-old hospitalized infants with different disease se
 
 ## Goal of the study: 
 1. Explore the immune alterations upon SARS-CoV-2 infection in two month-old hospitalized infants. <br/>
-2. Compare immune alterations in infants with those previously observed in **children** with COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
+2. Compare immune alterations in infants with those previously observed in ** infants and children** with moderate COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
 3. Compare immune alterations in infants with those previously observed in **adults** with COVID-19 (Liu et al.; [PMID:33713619]; scRNAseq dataset [GSE161918]). <br/>
 
 ## Cohort information (scRNAseq):
