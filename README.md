@@ -1,6 +1,6 @@
 
 ## Pediatric COVID-19 (pCoV) project: 
-SARS-CoV-2 infected two-month-old infants with different disease severity.<br/>  
+SARS-CoV-2 infected two-month-old hospitalized infants with different disease severity.<br/>  
 
 <img width="600" align="center" alt="Screenshot 2025-03-29 at 8 42 03 PM" src="https://github.com/user-attachments/assets/b8d80d4f-64ce-404d-80ae-9f82ab2d1710"/> <br/>
 
