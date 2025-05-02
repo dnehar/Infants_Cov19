@@ -3,18 +3,17 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
-#colors
-col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
+
+#colors
+col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
-# subsets to plot 
+# B cell subclusters 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
 # plot
@@ -46,5 +45,5 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in B cells') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
 
