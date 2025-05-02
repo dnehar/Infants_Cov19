@@ -27,8 +27,10 @@ Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
 
 ## Other assays 
 1- Serum analyte quantitation using Olink (92 Analytes) - Raw data (olink) is available as Supplementary Data 7 <br/>
-2- Antibody response (Collaboration with Adolfo García-Sastre and Teresa Aydillo @Mount Sinai):  anti-SARS-CoV-2: Spike, S2 and RBD  <br/> 
-3- Anti-Inteferon auto-antibodies (Collaboration with Adolfo García-Sastre and Teresa Aydillo @Mount Sinai) <br/>
+2- Antibody response (Collaboration with Adolfo García-Sastre and Teresa Aydillo @Mount Sinai):  
+  &nbsp;  a- anti-SARS-CoV-2: Spike, S2 and RBD  <br/>
+  &nbsp;  b- Anti-Inteferon auto-antibodies <br/>
+
 
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
