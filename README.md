@@ -6,8 +6,10 @@ SARS-CoV-2 infected two-month-old hospitalized infants with different disease se
 
 ## Goal of the study: 
 1. Explore the immune alterations upon SARS-CoV-2 infection in two month-old hospitalized infants. <br/>
-2. Compare immune alterations in infants with those previously observed in ** infants and children** with moderate COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
+2. Compare immune alterations in infants with those previously observed in **infants and children** with moderate COVID-19 (Wimmers et al. [PMID:37776858]; mutiome dataset [GSE239799]).<br/>
 3. Compare immune alterations in infants with those previously observed in **adults** with COVID-19 (Liu et al.; [PMID:33713619]; scRNAseq dataset [GSE161918]). <br/>
+
+Conducting research of this kind in 2 month-old infants is challenging, particularly due to the limited blood volume available (< 2 ml). While the immune response to SARS-CoV-2 infection in both adults and children is fairely well characterized, cases of **hospitalized** infants with **severe disease** remain rare. <br/>
 
 ## Cohort information (scRNAseq):
 -> 26 SARS-Cov-2 infected infants: 10 subacute (Group1, G1), 11 moderate (G2) and 5 severe (G3) patients.<br/>
@@ -25,8 +27,8 @@ Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
 
 ## Other assays 
 1- Serum analyte quantitation using Olink (92 Analytes) - Raw data (olink) is available as Supplementary Data 7 <br/>
-2- Antibody titers:  anti-SARS-CoV-2: Spike, S2 and RBD  <br/> 
-3- Anti-Inteferon auto-antibodies <br/>
+2- Antibody response (Collaboration with Adolfo García-Sastre and Teresa Aydillo @Mount Sinai):  anti-SARS-CoV-2: Spike, S2 and RBD  <br/> 
+3- Anti-Inteferon auto-antibodies (Collaboration with Adolfo García-Sastre and Teresa Aydillo @Mount Sinai) <br/>
 
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
