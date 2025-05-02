@@ -4,8 +4,8 @@
   library(ggpubr)
   library(tidyr)
 
-# load meta data 
-
+# load meta data (PBMCs, n=203,402 cells)   
+Meta <- read.csv('Meta_pCoV40_03112025_small.csv') 
 
 
 # colors 
