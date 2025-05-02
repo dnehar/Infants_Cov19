@@ -6,13 +6,11 @@ library(tidyr)
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
 
-#colors
+# colors (subclsuters)
 cols <- c('CD8_NAIVE'='tomato','CD8_ISGhi'='paleturquoise','CD8_GzK'='mediumseagreen','CD8_TEMRA'='cornflowerblue','CD8_Prolif'='mediumpurple')
 
-#subsets to plots
+# CD8 T cell subclusters 
 subset_to_be_plotted <- c( 'CD8_NAIVE','CD8_ISGhi','CD8_GzK','CD8_TEMRA','CD8_Prolif')
 
 #order samples
@@ -22,6 +20,7 @@ pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "p
 pG3 <- c( "pCoV2","pCoV7", "pCoV11", "pCoV17","pCov21")
 ordered_names <- c(pHC, pG1, pG2, pG3)
 
+# plot 
 BP <- Meta %>% 
   
   mutate(Patient_groups = factor(Groups, levels = c("pHC", "G1", "G2", "G3"))) %>%
