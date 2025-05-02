@@ -3,21 +3,21 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
-col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
 
-#order clinical groups
+# colors (clinical groups)
+col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
+
+# order clinical groups
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
-# subset to plot 
+# CD8 T cell subclusters 
 subset_to_be_plotted <- c( 'CD8_NAIVE','CD8_ISGhi','CD8_GzK','CD8_TEMRA','CD8_Prolif')
 
-
+# plot 
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(annotated_SCs, levels =subset_to_be_plotted)) %>%
   mutate(Groups = factor(Patient_groups, levels = clinical_groups)) %>%
