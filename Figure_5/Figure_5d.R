@@ -3,19 +3,17 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
-# colors 
-cols <- c('B_cells_SC0'='tomato','B_cells_SC1'='paleturquoise','B_cells_SC3'='mediumseagreen','B_cells_SC2'='cornflowerblue','B_cells_SC4'='mediumpurple')
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
 
+# colors (subclusters)
+cols <- c('B_cells_SC0'='tomato','B_cells_SC1'='paleturquoise','B_cells_SC3'='mediumseagreen','B_cells_SC2'='cornflowerblue','B_cells_SC4'='mediumpurple')
 
-# subset to be plotted 
+# Bcell subclusters 
 subset_to_be_plotted <- c( 'B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
 
-#order donors 
+# order donors 
 pHC <-  paste0("pHC", seq(1:14))
 pG1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
 pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
@@ -47,4 +45,4 @@ BP <- Meta %>%
         legend.position = "none") + #    ylab('% PBMC') + xlab('Age groups') 
   ylab('% in B cells') + xlab('Individuals (n=40)')
 
-BP 
+print(BP)
