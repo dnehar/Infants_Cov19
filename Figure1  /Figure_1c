@@ -4,7 +4,11 @@
   library(ggpubr)
   library(tidyr)
 
+# load meta data 
 
+
+
+# colors 
 col_simple_clustering = c('CD8_Tcells' = '#fc8d59',
                           'CD4_Tcells' = '#9e9ac8',
                           'B_cells'='#96daf7',
