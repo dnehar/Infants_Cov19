@@ -4,19 +4,20 @@ library(cowplot)
 library(ggpubr)
 library(tidyr)
 
-col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
-head(Meta)
-dim(Meta) 
+
+# colors (clinical groups)
+col_pGroups = c('G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f",'pHC'="#66bd63")
 
 clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups,2, FUN = list, simplify = T)
 
+# Plasma cell (PC) subclusters 
 subset_to_be_plotted <- c( 'PCs_SC0','PCs_SC1','PCs_SC2')
 
-
+# plot 
 plt_clinical <- Meta %>% 
   mutate(ReCluster = factor(SCs, levels =subset_to_be_plotted)) %>%
   mutate(Groups = factor(Patient_groups, levels = clinical_groups)) %>%
@@ -45,7 +46,7 @@ plt_clinical <- Meta %>%
         axis.title.y = element_text(face="bold", size=18)) + #    ylab('% PBMC') + xlab('Age groups')
   ylab('% in plasma cells (PCs)') + xlab('Clinical groups')
 
-plt_clinical
+print(plt_clinical)
 
 
 
