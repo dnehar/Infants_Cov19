@@ -26,8 +26,7 @@ Meta <- read.csv('./Meta_paCoV40_03112025_small.csv')
 
 subset_to_be_plotted <- c("NK_SC0", "NK_SC1")
 
-
-# order names 
+# order individuals  
 pHC <-  paste0("pHC", seq(1:14))
 pG1 <- c("pCoV1", "pCoV4", "pCoV10", "pCoV13", "pCoV14", "pCoV15", "pCoV16", "pCoV18", "pCoV19", "pCov25")
 pG2 <-  c("pCoV3",  "pCoV5",  "pCoV6",  "pCoV8", "pCoV9", "pCoV12", "pCoV20", "pCov22" ,"pCov23", "pCov24", "pCov26")
@@ -37,11 +36,10 @@ aG1 <- c("aCoV8","aCoV9","aCoV20")
 aG2 <- c("aCoV3", "aCoV21", "aCoV25", "aCoV28"  )
 aG3 <- c("aCoV1", "aCoV2" ,"aCoV4",  "aCoV5",  "aCoV6",   "aCoV7", "aCoV10", "aCoV11", "aCoV12", "aCoV13",
          "aCoV14", "aCoV15", "aCoV16", "aCoV17", "aCoV18", "aCoV19",  "aCoV22", "aCoV23", "aCoV24", "aCoV26", "aCoV27") 
-
 ordered_names <- c(pHC, pG1, pG2, pG3, aHC, aG1, aG2, aG3)
 length(ordered_names)
 
-
+# plot
 BP <- Meta %>% 
   
   mutate(Patient_groups = factor(Groups, levels = clinical_groups)) %>%
