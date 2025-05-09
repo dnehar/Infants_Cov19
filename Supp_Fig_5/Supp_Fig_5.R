@@ -1,5 +1,18 @@
+library(Seurat)
+library(SeuratDisk)
 
-#' convertToPseudoBulk
+# Convert AnnData object to seurat object using SeuratDisk package
+
+#https://github.com/mojaveazure/seurat-disk/issues/109
+
+Convert("./Wimmers/CD14_mono_wimmers_vs_pCoV_12132024.h5ad", dest = "h5seurat", assay = "RNA", overwrite = F, verbose = T)
+obj <- LoadH5Seurat("./CD14_mono_cleaned_pCov40_11232021.h5seurat", assays = "RNA")
+dim(obj@assays$RNA)
+
+obj <- LoadH5Seurat("./Wimmers/CD14_mono_wimmers_vs_pCoV_12132024.h5seurat",  meta.data = FALSE, misc = FALSE)
+print(obj)
+
+#' convertToPseudoBulk function
 #'
 #' Returns a matrix of pseudobulk expression from a given Seurat object with the selected grouping. 
 #' Optionally returns a metadata dataframe fro the samples extracted from the Seurat object. 
@@ -17,22 +30,6 @@
 #' @export
 #' 
 #' 
-
-library(Seurat)
-library(SeuratDisk)
-
-
-# Convert AnnData object to seurat object 
-
-#https://github.com/mojaveazure/seurat-disk/issues/109
-
-#Convert("./Wimmers/CD14_mono_wimmers_vs_pCoV_12132024.h5ad", dest = "h5seurat", overwrite = TRUE)
-Convert("./Wimmers/CD14_mono_wimmers_vs_pCoV_12132024.h5ad", dest = "h5seurat", assay = "RNA", overwrite = F, verbose = T)
-obj <- LoadH5Seurat("./CD14_mono_cleaned_pCov40_11232021.h5seurat", assays = "RNA")
-dim(obj@assays$RNA)
-
-obj <- LoadH5Seurat("./Wimmers/CD14_mono_wimmers_vs_pCoV_12132024.h5seurat",  meta.data = FALSE, misc = FALSE)
-obj
 
 convertToPseudoBulk <- 
   function (pbmc, 
@@ -65,6 +62,10 @@ convertToPseudoBulk <-
   }
 
 # Pseubulk data (Per sample or fig_ids)
-
 obj_agg <- convertToPseudoBulk(seu_obj, groups = c("fig_ids")) #"clinical_groups",
+
 head(obj_agg[['Aggregate.Metadata']])
+
+
+
+
