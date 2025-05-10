@@ -7,6 +7,7 @@ library(tidyr)
 # load meta data (PBMCs, n=203,402 cells)   
 Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 
+# colors
 col_pGroups = c('pHC'="#66bd63",'G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f")
 
 
@@ -46,7 +47,7 @@ p_tonic <- Meta %>%
   ggtitle("ISGhi Tr B cells (SC1) ")  +
   theme(plot.title = element_text(hjust = 0.5, vjust = 2, size=20, face="bold"))
 
-p_tonic
+print(p_tonic)
 
 
 
@@ -86,6 +87,5 @@ p_tonic <- Meta %>%
   ggtitle("ISGhi naive B cells (SC1) ")  +
   theme(plot.title = element_text(hjust = 0.5, vjust = 2, size=20, face="bold"))
 
-p_tonic
-
+print(p_tonic)
 
