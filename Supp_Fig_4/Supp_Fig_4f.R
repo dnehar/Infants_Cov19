@@ -10,7 +10,6 @@ Meta <- read.csv('Meta_pCoV40_03112025_small.csv')
 # colors
 col_pGroups = c('pHC'="#66bd63",'G1'="#d8daeb", 'G2'="#9e9ac8", 'G3'="#54278f")
 
-
 #### ISGhi Transitional B cells (TrB; n=5228 cells)
 
 p_tonic <- Meta %>% 
@@ -48,8 +47,6 @@ p_tonic <- Meta %>%
   theme(plot.title = element_text(hjust = 0.5, vjust = 2, size=20, face="bold"))
 
 print(p_tonic)
-
-
 
 #### ISGhi Naive B cells (n=4985 cells)
 
