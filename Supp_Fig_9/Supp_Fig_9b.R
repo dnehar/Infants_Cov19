@@ -42,7 +42,7 @@ aG3 <- c("aCoV1", "aCoV2" ,"aCoV4",  "aCoV5",  "aCoV6",   "aCoV7", "aCoV10", "aC
 ordered_names <- c(pHC, pG1, pG2, pG3, aHC, aG1, aG2, aG3)
 length(ordered_names)
 
-
+# plot 
 BP <- Meta %>% 
   
   mutate(Patient_groups = factor(Groups, levels = clinical_groups)) %>%
