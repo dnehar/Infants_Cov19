@@ -23,7 +23,7 @@ Paper 2 (in revision): [preprint #2]. <br/>
 
 ## Data availability: 
 Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the notebooks) are publicly available: **[GSE206289]** <br/>
-Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
+Fastq files can be requested on dbGAP under: **[phs002655.v1.p1]** <br/>
 
 ## Other assays 
 1- Serum analyte quantitation using Olink (92 Analytes) - Raw data (olink) is available as a Supplementary Data 7 <br/>
@@ -31,7 +31,7 @@ Fastq files will be available on dbGAP under: **phs002655.v1.p1** <br/>
   &nbsp;  a- anti-SARS-CoV-2: Spike, S2 and RBD  <br/>
   &nbsp;  b- Anti-Inteferon auto-antibodies <br/>
 
-
+[phs002655.v1.p1]:[http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002655.v1.p1]
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
 [GSE161918]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161918
