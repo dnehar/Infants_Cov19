@@ -31,7 +31,7 @@ Fastq files can be requested on dbGAP under: **[phs002655.v1.p1]** <br/>
   &nbsp;  a- anti-SARS-CoV-2: Spike, S2 and RBD  <br/>
   &nbsp;  b- Anti-Inteferon auto-antibodies <br/>
 
-[phs002655.v1.p1]:[http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002655.v1.p1]
+[phs002655.v1.p1]: http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002655.v1.p1
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
 [GSE161918]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161918
