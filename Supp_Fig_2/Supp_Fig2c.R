@@ -5,11 +5,11 @@ library(tidyr)
 library(Nebulosa)
 library(anndata)
    
-# load anndta object object
-adata <- read_h5ad("./H5AD_obj/CD14_mono_cleaned_pCov40_11232021.h5ad")
-adata
+   # load anndta object object
+   adata <- read_h5ad("./H5AD_obj/CD14_mono_cleaned_pCov40_11232021.h5ad")
+   adata
 
-# Generate seurat object #########
+   # Generate seurat object #########
     # raw counts 
    raw_exprs <- t(as.matrix(adata$raw$X))
    colnames(raw_exprs) <- adata$raw$obs_names #***
@@ -43,7 +43,7 @@ adata
    DimPlot(seurat)
  
  # plot genes using Nebulosa ##########
- 
+
  p_CD16_mo <- plot_density(seurat, 
                              features =  c('FCGR3A','S100A12','IFI27','MX1','IFI44L','IFI44'),
                              size = 0.5, pal='inferno',
