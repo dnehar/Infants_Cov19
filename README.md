@@ -18,8 +18,8 @@ Conducting research of this kind in 2 month-old infants is challenging, particul
 
 
 ## Publications associated with the study:
-Paper 1 (accepted in Nature Communication): [preprint #1]. <br/>
-Paper 2 (in revision): [preprint #2]. <br/>
+Paper 1 (published @ Nature Communication in 2025): [Nehar-Belaid et al]. <br/>
+Paper 2 (in revision): [preprint]. <br/>
 
 ## Data availability: 
 Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the notebooks) are publicly available: **[GSE206289]** <br/>
@@ -35,7 +35,7 @@ Fastq files can be requested on dbGAP under: **[phs002655.v1.p1]** <br/>
 [GSE206289]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289
 [GSE239799]:https://www.ncbi.xyz/geo/query/acc.cgi?acc=GSE239799
 [GSE161918]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161918
-[preprint #1]: https://www.researchsquare.com/article/rs-5176621/v1 
-[preprint #2]: https://www.researchsquare.com/article/rs-5640872/v1 
+[Nehar-Belaid et al]: https://www.nature.com/articles/s41467-025-59411-z
+[preprint]: https://www.researchsquare.com/article/rs-5640872/v1 
 [PMID:37776858]: https://pubmed.ncbi.nlm.nih.gov/37776858/
 [PMID:33713619]: https://pubmed.ncbi.nlm.nih.gov/33713619/
