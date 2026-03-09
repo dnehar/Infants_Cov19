@@ -16,8 +16,8 @@ Conducting research of this kind in 2 month-old infants is challenging, particul
 -> Age: pediatric COVID-19 (pCoV) : median, IQR age: 1.63 [0.93-7.59] months | Healthy controls:   median IQR age: 2.01 [1.86-4.28] months.<br/>
 
 ## Publications associated with the study:
-Paper 1 (published @ Nature Communication in 2025): [Nehar-Belaid et al]. <br/>
-Paper 2: published in Sci Transl Med .PMID: 41739901 <br/>
+Paper 1: published @ Nature Communication in 2025 - [Nehar-Belaid et al]. <br/>
+Paper 2: published @ Sci Transl Med in 20216 - [PMID: 41739901] <br/>
 
 ## Data availability: 
 Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the notebooks) are publicly available: **[GSE206289]** <br/>
@@ -36,3 +36,4 @@ Fastq files can be requested on dbGAP under: **[phs002655.v1.p1]** <br/>
 [Nehar-Belaid et al]: https://www.nature.com/articles/s41467-025-59411-z
 [PMID:37776858]: https://pubmed.ncbi.nlm.nih.gov/37776858/
 [PMID:33713619]: https://pubmed.ncbi.nlm.nih.gov/33713619/
+[PMID: 41739901]: https://pubmed.ncbi.nlm.nih.gov/41739901
