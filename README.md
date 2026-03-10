@@ -17,7 +17,7 @@ Conducting research of this kind in 2 month-old infants is challenging, particul
 
 ## Publications associated with the study:
 Paper 1: published @ Nature Communication in 2025 - [Nehar-Belaid et al]. <br/>
-Paper 2: published @ Sci Transl Med in 20216 - [PMID: 41739901] <br/>
+Paper 2: published @ Sci Transl Med in 2016 - [PMID: 41739901] <br/>
 
 ## Data availability: 
 Raw counts (cell ranger outputs) and processed data (.h5ad objects used in the notebooks) are publicly available: **[GSE206289]** <br/>
