@@ -2,7 +2,7 @@
 SARS-CoV-2 infected two-month-old hospitalized infants with different disease severity.<br/>  
 
 [![Publication](https://img.shields.io/badge/Nature%20Communications-2025-blue)](https://www.nature.com/articles/s41467-025-59411-z)
-[![Publication](https://img.shields.io/badge/Science%20Translational%20Medicine-2026-orange)](https://www.nature.com/articles/s41467-025-59411-z)
+[![Publication](https://img.shields.io/badge/Science%20Translational%20Medicine-2026-orange)](https://www.science.org/doi/10.1126/scitranslmed.aea7097)
 [![GEO](https://img.shields.io/badge/GEO-GSE135779-green)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289)
 [![dbGAP](https://img.shields.io/badge/dbGAP-phs002655-gray)](http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002655.v1.p1)
 
