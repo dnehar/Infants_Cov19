@@ -1,6 +1,12 @@
 ## Pediatric COVID-19 (pCoV) project: 
 SARS-CoV-2 infected two-month-old hospitalized infants with different disease severity.<br/>  
 
+[![Publication](https://img.shields.io/badge/Nature%20Communications-2025-blue)](https://www.nature.com/articles/s41467-025-59411-z)
+[![Publication](https://img.shields.io/badge/Science%20Translational%20Medicine-2026-orange)](https://www.nature.com/articles/s41467-025-59411-z)
+[![GEO](https://img.shields.io/badge/GEO-GSE135779-green)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206289)
+[![dbGAP](https://img.shields.io/badge/dbGAP-phs002655-gray)](http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002655.v1.p1)
+
+
 <img width="600" align="center" alt="Screenshot 2025-03-29 at 8 42 03 PM" src="https://github.com/user-attachments/assets/b8d80d4f-64ce-404d-80ae-9f82ab2d1710"/> <br/>
 
 ## Goal of the study: 
