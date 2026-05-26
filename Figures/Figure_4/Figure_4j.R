@@ -15,7 +15,7 @@ clinical_groups <- c("pHC", "G1", "G2", "G3")
 my_comparisons <- combn(clinical_groups, 2, FUN = list, simplify = T)
 
 # Define B cell subclusters to include in the plot
-subset_to_be_plotted <- c('B_cells_SC0','B_cells_SC1','B_cells_SC2','B_cells_SC3','B_cells_SC4')
+subset_to_be_plotted <- c( 'NK_SC0','NK_SC1','NK_SC2','NK_SC3')
 
 # Create plot: start with metadata and perform data preparation
 plt_clinical <- Meta %>% 
@@ -58,7 +58,7 @@ plt_clinical <- Meta %>%
         axis.title.x = element_text(face = "bold", size = 18),
         axis.title.y = element_text(face = "bold", size = 18)) +
   # Set axis labels
-  ylab('% in B cells') + xlab('Clinical groups')
+  ylab('% in NK cells') + xlab('Clinical groups')
 
 # Display the plot
 print(plt_clinical)
