@@ -58,7 +58,6 @@ ordered_names <- c(pHC, G1, G2, G3)
     #THEME +
     theme(axis.text.x = element_text(colour = a)) + #### x axis color per group
     ylab("Cell frequency") +
-    #guides(col = guide_legend(ncol = 2)) +
     theme(axis.text.y=element_text(face="bold",size=14), 
           axis.text.x=element_text(face="bold",size=14, angle = 90),
           axis.title.x = element_text(face="bold", size=16),
@@ -68,15 +67,10 @@ ordered_names <- c(pHC, G1, G2, G3)
           panel.border = element_rect(fill=NA, color = 'black', size=1),
           panel.background = element_rect(fill = "white", colour = NA),
           legend.text = element_text(size=9)) +
-    #theme(legend.position="none") +
     
     xlab("Individuals (n=40)") #+
   
-  #ggtitle("Individuals") +
-  #ggtitle(paste(Subcluster,"SC abundance across individuals"))
   print(p_Ind)
-  
-  
-  getwd()
+
   ggsave("./PANELS/Barplot_pCov_cluster_perIndiv_11272024.pdf", p_Ind,
          width=3.4, height=1.4,  units="in", scale=3)
